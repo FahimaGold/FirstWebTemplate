@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--<script src="javascr.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery(function($){
+                $('#search-trigger').click(function(){
+                    $('#search-input').toggleClass('search-input-open');
+                });
+ 
+                $(document).click(function(e){
+                    if(!$(e.target).closest('.ngen-search-form').length){
+                        $('#search-input').removeClass('search-input-open');
+                    }
+                })
+            });
+  </script>          
+</head>
+<title>Some magazine</title>
+<body>
+
+<div id="div-parent" >
+   
+    <ul id="liste2" style="width:100%">
+
+     <li> <p style="color:#BDBDBD;margin-left:10px"><strong> HEADLINES </strong></p></li> 
+     <li> <p id="p1" style="margin-left:10px"><strong><a href="file:///C:/Users/admin/Downloads/CSS3RotatingWords/CSS3RotatingWords/index.html"> BUSINESS </a></strong></p></li> 
+    <li>
+					<div class="rw-words rw-words-1">
+						<span><a href="#world">World's news today</a></span>
+						<span><a href="#turkey">Coup in Turkey fails</a></span>
+						<span> <a href="#usa">Congratulations USA for the awesome...</a></span>
+						<span> <a href="#amercia">Good morning World</a></span>
+						<span> <a href="#new-yok">Hello from New York</a></span>
+						<span class="last_span"> <a href="#temp">This is My first web template</a></span>
+					</div>
+					 </li>     
+					 </ul>
+<ul id="liste1" >
+     <li> <a class="active" href="file:///D:/Mkt/Stage%20d'%C3%A9t%C3%A9%201CS/1st%20task/index.html#home">ACCUEIL </a></li>
+     <li> <a href="#magasin">MAGASIN</a></li>
+      <li> <a class="genericon genericon-facebook-alt"  href="https://fr-fr.facebook.com/"></a></li>   
+      <li> <a class="genericon genericon-youtube"  href="https://www.youtube.com/?hl=fr&gl=DZ"></a></li> 
+      <li> <a class="genericon genericon-twitter"  href="https://twitter.com/?lang=fr"></a></li>     
+     <li> <a style="border-left:1px solid #BDBDBD;" href="#se-connecter" class="genericon genericon-user" ><span style="font-size:12px;text-align:left;vertical-align:top;">&nbsp;&nbsp;&nbsp;LOGIN</span></a></li>
+     
+	 </ul>
+	   <ul id="liste3">
+	   	  <li><p style="font-size:50px;font--weight:bolder;color:#B71C1C;margin-left:15px">GGG</li>
+	   	  <li><p style="font-size:50px;font--weight:bolder;color:#FFEB3B;margin-left:5px">_20</p></li>
+	   	  <li><img src="images/b2.jpg" height="130px" width="700px" style="position:absolute;right:15px;top:15px;"></li>
+	 	 </ul>
+	 	 <div style="position: absolute;top:238px; left:0px;border:2px solid #FFEB3B; width:100%;z-index:0;">
+	 	       </div>
+	 	     
+	 	<ul id="liste4">
+	   	  <li  class="dropdown"><a href="#" style="background-color:#212121;color:#FFFFFF" class="genericon genericon-home" >&nbsp;&nbsp;ACCUEIL</a>
+               <ul class="dropdown-content">    
+                   <li><a href="#">TECH</a> </li> 
+                   <li><a href="#">SPORT</a> </li> 
+                   <li><a href="#">FASHION</a> </li> 
+                   <li><a href="#">MAGAZINE</a> </li> 
+                   <li><a href="#">VOYAGE</a> </li> 
+                   <li><a href="#">LOISIRS</a> </li> 
+               </ul>
+	   	  </li>
+           
+	   	  <li><a style="color:#FFFFFF" href="#" class="genericon genericon-video">&nbsp; &nbsp;VIDEO</a></li>
+	   	  <li><a style="color:#FFFFFF" href="#">ARTICLES</a></li>
+	   	  <li><a style="color:#FFFFFF" href="#" class="genericon genericon-menu">&nbsp;&nbsp;&nbsp;OPTIONS</a></li>
+	   	  <li><a style="color:#FFFFFF" href="#">MEGA MENU</a></li>
+	   	  <li>
+	   	  	<div>
+        <div class="form">
+            <form class="form-search ngen-search-form" action="" method="get">
+                <input type="text" name="q" id="search-input" class="form-search-input" placeholder="Recherche..." dir="ltr">
+                <span id="search-trigger" class="form-search-submit ">&#x1f50e;</span>
+            </form>
+        </div>
+    </div>
+
+	   	  </li>
+	   	  
+	 	 </ul>
+	 	      <div id="column1">
+	 	      	<a href="#picture" style="color:#FFFFFF;margin-left:5px; ">
+	 	      		
+	 	      	<img src="images/img5.jpg" width="590px" height="350px" style="position:absolute;top:0px;left:0px;float:initial;a-index:-1;" >
+	 	      	   <p class="para"  style="position:absolute;left:15px;top:300px;  background-color:#111;opacity:0.85;" >AMAZING ROLEX WATCH<p>
+                     
+	 	      	</a>
+
+                 <a href="#fitness"  style="color:#FFFFFF;margin-left:5px; text-decoration:none; ">
+	 	      		
+	 	      	<img src="images/img8.jpg" width="260px" height="170px" style="position:absolute;top:0px;left:600px;z-index:1;" >
+	 	      	   <p class="para"   style="position:absolute;left:620px;top:120px; background-color:#111; opacity:0.85; z-index:1;" >FITNESS: A WEARABLE DEVICE<p>
+                     
+	 	      	</a>
+	 	      	 <a href="#sport"  style="color:#FFFFFF;margin-left:5px; text-decoration:none; ">
+	 	      		
+	 	      	<img src="images/img9.jpg" width="260px" height="170px" style="position:absolute;top:0px;left:865px;z-index:1;margin-left:8px;" >
+	 	      	   <p class="para"   style="position:absolute;left:875px;top:120px; background-color:#111; opacity:0.85; z-index:1;" >TENNIS: RAFAEL NADAL<p>
+                     
+	 	      	</a>
+	 	      	 <a href="#sport"  style="color:#FFFFFF;margin-left:5px; text-decoration:none; ">
+	 	      		
+	 	      	<img src="images/img10.jpg" width="260px" height="170px" style="position:absolute;top:180px;left:590px;z-index:1;margin-left:10px;" >
+	 	      	   <p class="para"   style="position:absolute;left:610px;top:300px; background-color:#111; opacity:0.85; z-index:1;" >MOBILE: IPHONE NEW REALEASE<p>
+                     
+	 	      	</a>
+	 	      	<a href="#Summer"  style="color:#FFFFFF;margin-left:5px; text-decoration:none; ">
+                 <img src="images/img7.jpg" width="260px" height="170px" style="position:absolute;top:180px;left:865px;z-index:1;margin-left:8px;" >
+	 	      	   <p class="para"   style="position:absolute;left:875px;top:300px; background-color:#111; opacity:0.85; z-index:1;" >SUMMER & SURFING<p>
+                     
+	 	      	</a>
+
+	 	      	  <ul id="liste5">
+	 	      	  	<li style="color:#FFFFFF;background-color:#E53935;padding:14px 16px;  ">TOP NEWS</li>
+	 	      	  	<li><a href="#">ALL</a></li>
+	 	      	  	<li><a href="#">BUSINESS</a></li>
+	 	      	  	<li><a href="#">LIFESTYLE</a></li>
+	 	      	  	<li><a href="#">TRAVEL</a></li>
+
+	 	      	  </ul>
+	 	      	  <a href="#article1"  style="color:#000011;text-decoration:none; ">
+	 	      	  	<img src="images/img3.jpg" width="350px" height="220px" style="position:absolute;top:470px;left:0px;" >
+	 	      	     <article style="position:absolute;top:700px;left:0px;">
+	 	      	     	<header>
+                         <h1 class="article">WONDERFUL HOUSE IN AUCTION</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">23-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> <br>
+                        <p style="overflow:hidden;font-weight:normal;color:#616161;font-size:14px;line-height:18px;">The <b>apple</b>Duplex refait a neuf, jamais habité, de 139m²,<br> moderne,toute commodités,
+                             chfc,clim,interphone, fenêtres en <br>PVC avec rideaux roulants électriques,spots,
+                             résidence fermée <br>avec poste de garde,parking sous sol (1 box), jolie esplanade<br> avec une aire
+                             de jeux,accès direct auto Rdc :hall,beau salon,<br> splendide cuisine equipée avec loggia,salle de bain.
+	 	      	     	  <footer>
+                       <a href="#suite-article" style="text-decoration:none;"><p class="suite-article"><small>&nbsp;VOIR PLUS</small></p></a>
+                        </footer>
+	 	      	     </article>
+	 	      	         
+	 	             <span style="position:absolute;top:470px;left:370px;">
+
+                          <img src="images/img14.jpg" width="150px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+	 	      	     	<header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">WHY YOU SHOULD WORKOUT SO OFTEN</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">20-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+	 	      	          </span> 
+	 	      	        
+
+	 	      	         <span style="position:absolute;top:585px;left:370px;">
+
+                          <img src="images/img11.jpg" width="150px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+	 	      	     	<header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">THINGS YOU SHOULD NEVER NEGLECT <br>IN YOUR FINANCE</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">30-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+	 	      	          </span> 
+
+
+
+	 	      	           <span style="position:absolute;top:695px;left:370px;">
+
+                          <img src="images/img12.jpg" width="150px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+	 	      	     	<header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">THINGS DOCTORS MAY NOT TELL YOU</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">02-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+	 	      	          </span> 
+
+                          
+                           <span style="position:absolute;top:805px;left:370px;">
+
+                          <img src="images/img13.jpg" width="150px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+	 	      	     	<header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">HERE IS HOW YOU CAN OVERCOME <br>PRESSURE IN WORK</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">02-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+	 	      	          </span> 
+                        
+                 <span>
+	 	      		 <ul  style="position:absolute;top:970px;left:40px; list-style-type:none; margin:0;padding:0;text-decoration:none;  width:50%;  border-bottom: 2px solid #FF7043;" >
+	 	      		 	  <p style="float:left; margin-left:-40px; color:#FFFFFF;padding:14px 16px;font-weight:bolder; background-color:#FF7043;margin-bottom:-2px; "> WATCH </p>
+
+	 	      		 </ul>
+
+	 	      		</span>
+              <p style="display:inline-block;">
+                <div  style="position:absolute;top:1040px;left:0px;">
+  <iframe width="250" height="220" src="http://www.youtube.com/embed/wN3gueLT0D8?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  </div>
+	 	       
+	 	        <div  style="position:absolute;top:1040px;left:260px;float:left;">
+  <iframe width="250" height="220" src="https://www.youtube.com/watch?v=UnvJU5o_QRY" frameborder="0" allowfullscreen></iframe>
+               </div>
+	 	       </p>
+
+	 	        
+             <span>
+	 	      		 <ul  style="position:absolute;top:1300px;left:0px; list-style-type:none; margin:0;padding:0;text-decoration:none;  width:22%;  border-bottom: 2px solid #448AFF;" >
+	 	      		 	  <p style="float:left;  color:#FFFFFF;padding:14px 16px;font-weight:bolder; background-color:#448AFF;margin-bottom:-2px; ">LIFESTYLE</p>
+
+	 	      		 </ul>
+
+	 	      		</span>
+
+	 	      		<a href="#article1"  style="color:#000011;text-decoration:none; ">
+	 	      	  	<img src="images/img3.jpg" width="350px" height="220px" style="position:absolute;top:1370px;left:0px;" >
+	 	      	     <article style="position:absolute;top:1590px;left:0px;">
+	 	      	     	<header>
+                         <h1 class="article">WONDERFUL HOUSE IN AUCTION</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">23-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> <br>
+                        <p style="overflow:hidden;font-weight:normal;color:#616161;font-size:14px;line-height:18px;">The <b>apple</b>Duplex refait a neuf, jamais habité, de 139m²,<br> moderne,toute commodités,
+                             chfc,clim,interphone, fenêtres en <br>PVC avec rideaux roulants électriques,spots,
+                             résidence fermée <br>avec poste de garde,parking sous sol (1 box), jolie esplanade<br> avec une aire
+                             de jeux,accès direct auto Rdc :hall,beau salon,<br> splendide cuisine equipée avec loggia,salle de bain.
+	 	      	     	  <footer>
+                       <a href="#suite-article" style="text-decoration:none;"><p class="suite-article"><small>&nbsp;VOIR PLUS</small></p></a>
+                        </footer>
+	 	      	     </article>
+                        </div>
+        
+                            <span>
+	 	      		 <ul  style="position:absolute;top:1585px;left:430px; list-style-type:none; margin:0;padding:0;text-decoration:none;  width:30%;  border-bottom: 2px solid #00C853;" >
+	 	      		 	  <p style="float:left;  color:#FFFFFF;padding:14px 16px;font-weight:bolder; background-color:#00C853;margin-bottom:-2px; ">BUSINESS</p>
+
+	 	      		 </ul>
+
+	 	      		</span>
+                       
+                       
+                    <a href="#article2"  style="color:#000011;text-decoration:none; ">
+	 	      	  	<img src="images/img11.jpg" width="350px" height="220px" style="position:absolute;top:1655px;left:430px;" >
+	 	      	     <article style="position:absolute;top:1875px;left:430px;">
+	 	      	     	<header>
+                         <h1 class="article">THINGS YOU SHOULD NEVER NEGLECT <br>IN YOUR FINANCE</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">23-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> <br>
+                        <p style="overflow:hidden;font-weight:normal;color:#616161;font-size:14px;line-height:18px;">The <b>apple</b>Duplex refait a neuf, jamais habité, de 139m²,<br> moderne,toute commodités,
+                             chfc,clim,interphone, fenêtres en <br>PVC avec rideaux roulants électriques,spots,
+                             résidence fermée <br>avec poste de garde,parking sous sol (1 box), jolie esplanade<br> avec une aire
+                             de jeux,accès direct auto Rdc :hall,beau salon,<br> splendide cuisine equipée avec loggia,salle de bain.
+	 	      	     	  <footer>
+                       <a href="#suite-article" style="text-decoration:none;"><p class="suite-article"><small>&nbsp;VOIR PLUS</small></p></a>
+                        </footer>
+	 	      	     </article>
+
+<ul style="position:absolute;top:2150px;left:0px;border-bottom:1px solid #BDBDBD;width:26.5%;margin-left:15px;"> </ul>
+<ul style="position:absolute;top:2150px;left:415px;border-bottom:1px solid #BDBDBD;width:27%;margin-left:8px;"> </ul>
+
+ <span style="position:absolute;top:2180px;left:0px;margin-left:0px;">
+
+                          <img src="images/img12.jpg" width="150px" height="100px" style="margin-left:15px;margin-right:5px;">
+                            <article style="float:right;">
+	 	      	     	<header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">THINGS DOCTORS MAY NOT <br>TELL YOU</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">02-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+	 	      	          </span> 
+
+	 	      	            <span style="position:absolute;top:2180px;left:415px;">
+
+                          <img src="images/img14.jpg" width="150px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+	 	      	     	<header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">WHY YOU SHOULD WORKOUT SO<br> OFTEN</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">20-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+	 	      	          </span> 
+
+	 	      	           <span style="position:absolute;top:2310px;left:0px;">
+
+                          <img src="images/img13.jpg" width="150px" height="100px" style="margin-left:15px;" >
+                            <article style="float:right;margin-left:8px;">
+	 	      	     	<header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">HERE IS HOW YOU CAN <br>OVERCOME PRESSURE IN WORK</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">02-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+	 	      	          </span> 
+                              
+                               <span style="position:absolute;top:2310px;left:415px;">
+
+                          <img src="images/img11.jpg" width="150px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+	 	      	     	<header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">THINGS YOU SHOULD NEVER <br>NEGLECT IN YOUR FINANCE</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">30-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+	 	      	          </span>
+                               
+                                   <ul style="list-style-type:none;display:block ;position:absolute;top:2470px;left:0px; padding:0;margin:0; margin-left:15px;width:66%;"><li style="font-size:22px; color:#000011;font-weight:bolder; padding:14px 16px;word-spacing:3px;border-bottom:2px solid #E0E0E0;margin-bottom:7px;"><span class="genericon genericon-website">LATEST  NEWS</span></li></ul>
+                                <a href="#picture" style="color:#FFFFFF;margin-left:5px; ">
+              
+                             <img src="images/mal.jpeg" width="770px" height="370px" style="position:absolute;top:2570px;left:15px;px;float:initial;a-index:-1;" >
+                               <p class="para"  style="position:absolute;left:60px;top:2850px; font-size:20px; background-color:#111;opacity:0.7;" >MALYSIA....ONE OF THE MOST VISITED PLACES<p>
+                     
+                                </a>
+                                    <ul style="list-style-type:none;display:block ;position:absolute;top:2960px;left:0px; padding:0;margin:0; margin-left:15px;width:66%;"><li style="font-size:22px; color:#000011;font-weight:bolder; padding:14px 16px;word-spacing:3px;border-bottom:2px solid #E0E0E0;margin-bottom:7px;"></li></ul>
+                                <a href="#picture" style="color:#FFFFFF;margin-left:5px; ">
+
+
+
+                            <a href="#article6"  style="color:#000011;text-decoration:none; ">
+                <img src="images/bali.jpg" width="370px" height="267px" style="position:absolute;top:3040px;left:15px;" >
+                 <article style="position:absolute;top:3030px;left:400px;">
+                  <header>
+                         <h1 class="article">3 WONDERFUL PLACE YOU MAY HAVE<br> NEVER THOUGHT OF FOR A GREAT<br> HOLIDAY</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">23-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> <br>
+                        <p style="overflow:hidden;font-weight:normal;color:#616161;font-size:14px;line-height:18px;">The <b>apple</b>Duplex refait a neuf, jamais habité, de 139m²,<br> moderne,toute commodités,
+                             chfc,clim,interphone, fenêtres en <br>PVC avec rideaux roulants électriques,spots,
+                             résidence fermée <br>avec poste de garde,parking sous sol (1 box), jolie esplanade<br> avec une aire
+                             de jeux,accès direct auto Rdc :hall,beau salon,<br> splendide cuisine equipée avec loggia,salle de bain.
+                    <footer>
+                       <a href="#suite-article" style="text-decoration:none;"><p class="suite-article"><small>&nbsp;VOIR PLUS</small></p></a>
+                        </footer>
+                 </article>
+
+                    
+
+                        <span style="position:absolute;top:3350px;left:15px;">
+
+                          <img src="images/watch.jpg" width="130px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+                  <header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">TRENDY WATCH DESIGNED TO BE<br> SPORTY</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">20-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+                      </span> 
+                                  
+                                
+                                   <ul style="list-style-type:none;display:block ;position:absolute;top:3470px;left:0px; padding:0;margin:0; margin-left:15px;width:66%;"><li style="font-size:22px; color:#000011;font-weight:bolder; padding:14px 16px;word-spacing:3px;border-bottom:2px solid #E0E0E0;margin-bottom:7px;"><span ></span></li></ul>
+                                <a href="#picture" style="color:#FFFFFF;margin-left:5px; ">
+
+
+                             <a href="#article6"  style="color:#000011;text-decoration:none; ">
+                <img src="images/greece.jpg" width="370px" height="267px" style="position:absolute;top:3540px;left:15px;" >
+                 <article style="position:absolute;top:3540px;left:400px;">
+                  <header>
+                         <h1 class="article">AUSTERITY IN GREECE:HOW TO <br>END IT?</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">23-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> <br>
+                        <p style="overflow:hidden;font-weight:normal;color:#616161;font-size:14px;line-height:18px;">The <b>apple</b>Duplex refait a neuf, jamais habité, de 139m²,<br> moderne,toute commodités,
+                             chfc,clim,interphone, fenêtres en <br>PVC avec rideaux roulants électriques,spots,
+                             
+                    <footer>
+                       <a href="#suite-article" style="text-decoration:none;"><p class="suite-article"><small>&nbsp;VOIR PLUS</small></p></a>
+                        </footer>
+                 </article>
+                         
+                               
+                                <ul style="list-style-type:none;display:block ;position:absolute;top:3830px;left:0px; padding:0;margin:0; margin-left:15px;width:66%;"><li style="font-size:22px; color:#000011;font-weight:bolder; padding:14px 16px;word-spacing:3px;border-bottom:2px solid #E0E0E0;margin-bottom:7px;"><span ></span></li></ul>
+                                <a href="#picture" style="color:#FFFFFF;margin-left:5px; ">
+
+                         <a href="#article6"  style="color:#000011;text-decoration:none; ">
+                <img src="images/cofounders.jpeg" width="390px" height="267px" style="position:absolute;top:3900px;left:15px;" >
+                 <article style="position:absolute;top:3900px;left:420px;">
+                  <header>
+                         <h1 class="article">STARTUP COMPANY'S CO-FOUNDER <br>REVEALS NEW PRODUCT</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">23-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> <br>
+                        <p style="overflow:hidden;font-weight:normal;color:#616161;font-size:14px;line-height:18px;">The <b>apple</b>Duplex refait a neuf, jamais habité, de 139m²,<br> moderne,toute commodités,
+                             chfc,clim,interphone, fenêtres en <br>PVC avec rideaux roulants électriques,spots,
+                             
+                    <footer>
+                       <a href="#suite-article" style="text-decoration:none;"><p class="suite-article"><small>&nbsp;VOIR PLUS</small></p></a>
+                        </footer>
+                 </article>  
+
+                          
+                            <span style="position:absolute;top:4200px;left:15px;">
+                        
+                          <img src="images/football.jpg" width="130px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+                  <header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">GREAT TRIMPH TO UTAH IN BASEBALL</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">20-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+                      </span> 
+                               
+                          
+
+                          <span style="position:absolute;top:4200px;left:430px;">
+                        
+                          <img src="images/par.jpg" width="130px" height="100px" >
+                            <article style="float:right;margin-left:8px;">
+                  <header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">WOMEN: BEAUTY AND FITNESS</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">20-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+                      </span> 
+
+
+                      <ul style="list-style-type:none;display:block ;position:absolute;top:4320px;left:0px; padding:0;margin:0; margin-left:15px;width:66%;"><li style="font-size:22px; color:#000011;font-weight:bolder; padding:14px 16px;word-spacing:3px;border-bottom:1px solid #F5F5F5;margin-bottom:7px;"><span ></span></li></ul>
+                                <a href="#picture" style="color:#FFFFFF;margin-left:5px; ">
+                        <ul style="list-style-type:none;display:block ;position:absolute;top:4455px;left:0px; padding:0;margin:0; margin-left:15px;width:95%;"><li style="font-size:22px; color:#000011;font-weight:bolder; padding:14px 16px;word-spacing:3px;border-bottom:1px solid #F5F5F5;margin-bottom:7px;"><span ></span></li></ul> </a>
+                               
+
+                    <p id="anciens-posts"><a  href="#olderposts" style="position:absolute;top:4390px;left:20px;font-size:11px;padding:12px 17px;background-color:#E0E0E0; text-decoration:none;  color:#757575;font-weight:bold;">OLDER POSTS</a></p>
+
+
+                  
+                       <div class="w3-content" style="max-width:800px;position:absolute;top: 4530px;left:15px;cursor:pointer;">
+
+<img class="mySlides" src="images/ny.jpg" height="600px" width="1140px" style="z-index=2;">
+<img class="mySlides" src="images/im6.jpg" height="600px" width="1140px" style="z-index=2;">
+<img class="mySlides" src="images/img1.jpg" height="600px" width="1140px" style="z-index=2;">
+<img class="mySlides" src="images/img2.jpg" height="600px" width="1140px" style="z-index=2;">
+<img class="mySlides" src="images/nature.jpg" height="600px" width="1140px" style="z-index=2;">
+
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:-337px;" onclick="plusDivs(1)">❯</a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+
+                     </div>
+
+                          
+
+
+
+	 	        	<div id="column2">
+	 	        		<span>
+	 	      		 <ul  style="position:absolute;top:377px;right:-0px; list-style-type:none;margin-left:20px; margin:0;padding:0;text-decoration:none;  width:80%;  border-bottom: 2px solid #000011;" >
+	 	      		 	  <p style="float:left; margin-left:-55px; color:#FFEB3B;padding:14px 16px;font-weight:bolder; background-color:#000011;margin-bottom:-2px; "> SUIVEZ NOUS </p>
+
+	 	      		 </ul>
+
+	 	      		</span>
+
+
+                           <ul id="liste-c2"> 
+                             <li> <a  style="color:#FFFFFF;text-decoration:none;font-size:20px; padding:10px 10px;font-weight:bold; background-color:#3B5998;" href="#" class="genericon genericon-facebook-alt"><br><br> 97335 Fans </a></li> 
+                              <li> <a  style="float:left;color:#FFFFFF;text-decoration:none;font-size:20px; padding:10px 10px;font-weight:bold; background-color:#4099FF;;" href="#" class="genericon genericon-twitter"><br><br> 12035 Fans </a></li> 
+                               <li> <a  style="color:#FFFFFF;text-decoration:none;font-size:20px; padding:10px 10px;font-weight:bold; background-color:#d34836;" href="#" class="genericon genericon-googleplus"><br><br> 1069 Fans </a></li> 
+
+                           </ul>
+                              
+                         <img src="images/img15.jpg" height="250px" width="335px" style="position:absolute;top:570px;right:0px;left:0px;margin-left:15px;">
+                          <span>
+               <ul  style="position:absolute;top:850px;right:-0px; list-style-type:none;margin-left:20px; margin:0;padding:0;text-decoration:none;  width:80%;  border-bottom: 2px solid #000011;" >
+                  <p style="float:left; margin-left:-55px; color:#FFEB3B;padding:14px 16px;font-weight:bolder; background-color:#000011;margin-bottom:-2px; "> COMMENTAIRES </p>
+
+               </ul>
+
+              </span>   
+                     <span >
+                           <img src="images/contact.png" width="90px" height="90px" style="position:absolute;top:940px;left:0px;">
+                           <span style="position:absolute;top:970px;left:80px;">  GOOGLE: SAN FRANCISCO, MOUNTAIN VIEW </span> 
+                     </span> 
+
+                     <span >
+                           <img src="images/contact.png" width="90px" height="90px" style="position:absolute;top:1040px;left:0px;">
+                           <span style="position:absolute;top:1070px;left:80px;">  GOOGLE: SAN FRANCISCO, MOUNTAIN VIEW </span> 
+                     </span> 
+
+                     <span >
+                           <img src="images/contact.png" width="90px" height="90px" style="position:absolute;top:1140px;left:0px;">
+                           <span style="position:absolute;top:1170px;left:80px;">  GOOGLE: SAN FRANCISCO, MOUNTAIN VIEW </span> 
+                     </span> 
+
+                      <span>
+               <ul  style="position:absolute;top:1250px;right:-0px; list-style-type:none;margin-left:20px; margin:0;padding:0;text-decoration:none;  width:80%;  border-bottom: 2px solid #000011;" >
+                  <p style="float:left; margin-left:-55px; color:#FFEB3B;padding:14px 16px;font-weight:bolder; background-color:#000011;margin-bottom:-2px; "> CATEGORIES</p>
+
+               </ul>
+
+              </span>
+
+                      <ul id="liste-cat">
+                          <li><a href="#business"  ><span class="genericon genericon-checkmark">BUSINESS</span></a></li>
+                          <li><a href="#celebrity"  ><span class="genericon genericon-checkmark">CELEBRITY</span></a></li>
+                          <li><a href="#"  ><span class="genericon genericon-checkmark">DESTINATION</span></a></li>
+                          <li><a href="#"  ><span class="genericon genericon-checkmark">FASHION</span></a></li>
+                          <li><a href="#"  ><span class="genericon genericon-checkmark">FITNESS</span></a></li>
+                          <li><a href="#"  ><span class="genericon genericon-checkmark">FOOD</span></a></li>
+                          <li><a href="#"  ><span class="genericon genericon-checkmark">LIFESTYLE</span></a></li>
+                          <li><a href="#" ><span  class="genericon genericon-checkmark">MOBILE</span></a></li>
+                          <li><a href="#" ><span  class="genericon genericon-checkmark">MOVIES</span></a></li>
+                         <li><a href="#" ><span class="genericon genericon-checkmark" >MUSIC</span></a></li>
+                         <li><a href="#"  ><span class="genericon genericon-checkmark">SPORT</span></a></li>
+                         <li><a href="#" ><span  class="genericon genericon-checkmark"> TECH</span></a></li>
+                         <li><a href="#"  ><span class="genericon genericon-checkmark">TRAVEL</span></a></li>
+                         <li><a href="#" ><span class="genericon genericon-checkmark">VIDEO</span></a></li>
+                         <li><a href="#"  ><span class="genericon genericon-checkmark">VIMEO</span></a></li>
+                         <li><a href="#"  ><span class="genericon genericon-checkmark">YOUTUBE</span></a></li>
+                       </ul>
+
+                        <span>
+               <ul  style="position:absolute;top:2150px;right:-0px; list-style-type:none;margin-left:20px; margin:0;padding:0;text-decoration:none;  width:80%;  border-bottom: 2px solid #000011;" >
+                  <p style="float:left; margin-left:-55px; color:#FFEB3B;padding:14px 16px;font-weight:bolder; background-color:#000011;margin-bottom:-2px; "> BUSINESS</p>
+
+               </ul>
+
+              </span>
+                          <img src="images/bus.jpg" style="position:absolute;top:2240px;left:15px;" height="230px" width="320px">
+
+                           <span>
+               <ul  style="position:absolute;top:2490px;right:-0px; list-style-type:none;margin-left:20px; margin:0;padding:0;text-decoration:none;  width:80%;  border-bottom: 2px solid #000011;" >
+                  <p style="float:left; margin-left:-55px; color:#FFEB3B;padding:14px 16px;font-weight:bolder; background-color:#000011;margin-bottom:-2px; "> TECH</p>
+
+               </ul>
+ 
+              </span>
+                      <img src="images/kid.jpg" style="position:absolute;top:2600px;left:15px;" height="230px" width="320px">
+
+                  <span style="position:absolute;top:2880px;left:15px;">
+
+                          <img src="images/watch.jpg" width="110px" height="80px" >
+                            <article style="float:right;margin-left:8px;">
+                  <header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">TRENDY WATCH DESIGNED TO BE<br> SPORTY</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">20-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+                      </span> 
+
+                      <span style="position:absolute;top:3010px;left:15px;">
+                        
+                          <img src="images/par.jpg" width="110px" height="80px" >
+                            <article style="float:right;margin-left:8px;">
+                  <header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">WOMEN: BEAUTY AND FITNESS</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">20-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+                      </span> 
+
+
+
+                      <span style="position:absolute;top:3140px;left:15px;">
+                        
+                          <img src="images/football.jpg" width="110px" height="80px" >
+                            <article style="float:right;margin-left:8px;">
+                  <header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">GREAT TRIMPH TO UTAH IN <br>BASEBALL</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">20-06-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+                      </span> 
+
+                          
+
+                         <span style="position:absolute;top:3290px;left:0px;">
+
+                          <img src="images/img13.jpg" width="120px" height="110px" style="margin-left:15px;" >
+                            <article style="float:right;margin-left:8px;">
+                  <header>
+                         <h1 class="article" style="font-size:12px;line-height:18px;">HERE IS HOW YOU CAN <br>OVERCOME PRESSURE IN WORK</h1> <br>
+                      </a>
+                       <span style="color:#E53935;font-size:12px;opacity:0.8;">Publié: <time pubdate="pubdate">02-07-2016</time> &nbsp;
+                           <span class="genericon genericon-comment">5</span> &nbsp; 
+                           <span class="genericon genericon-digg">32</span>&nbsp; 
+                           <span class="genericon genericon-show">112</span>
+                          
+                            </span>
+                         </header> 
+                           </article>
+
+                      </span> 
+                          
+
+                                    <img src="images/tokyo.jpg" style="position:absolute;top:3440px;left:15px;" height="350px" width="333px">
+
+
+
+                          <span>
+
+               <ul  style="position:absolute;top:3800px;right:-0px; list-style-type:none;margin-left:20px; margin:0;padding:0;text-decoration:none;  width:80%;  border-bottom: 2px solid #000011;" >
+                  <p style="float:left; margin-left:-55px; color:#FFEB3B;padding:14px 16px;font-weight:bolder; background-color:#000011;margin-bottom:-2px; "> ABOUT US</p>
+
+               </ul>
+ 
+              </span>                                 
+
+
+                         <span style="position:absolute;top:3900px;left:15px;color:#9E9E9E;font-size:14px;font-weight:normal;max-width:95%;" >This magazine gives you all what you need to know about the world.It encompasses knowledge and fun, buisness and health.It offers tips guarranteed by professionals.There is no doubt in what we write. Want to know about the world,have fun or even speak your mind, congratulations! you've found your place! </span> 
+
+                         <img src="images/img1.jpg" style="position:absolute;top:4025px;left:15px;" height="210px" width="333px">
+	 	      			</div>
+	 		</div>
+	 		 
+                   
+                <div style="position:absolute;top:5190px;left:0px;margin-left:15px;margin-right:-55px;background-color:#444444;padding:20% 48.7%;font-size:14px;word-spacing:5px;">
+                          
+                    <ul style="position:absolute;top:30px;left:20px;margin:0;padding:0;list-style-type:none;display:block;color:#FFFFFF;"> 
+                      <li style="border-left:3px solid #FFEB3B;float:left;margin-right:230px;">GGG_20 </li>
+                      <li style="border-left:3px solid #FFEB3B;float:left;margin-right:230px;">RECENT POSTS</li>
+                      <li style="border-left:3px solid #FFEB3B;float:left;margin-right:230px;">NEWS LETTER </li>
+                      <li style="border-left:3px solid #FFEB3B;float:left;">TWITTER </li>
+                    </ul>
+                    <span style="position:absolute;top:60px;max-width:22%;font-size:14px;font-weight:normal;left:20px;color:#BDBDBD;">I created this template when I first started learning web, and web design.</span>
+
+                     <ul id="footer">
+                          <li><a href="#business"  ><span class="genericon genericon-checkmark">MALUSIA:ONE OF MOST VISITED PLACE</span></a></li>
+                          <li><a href="#celebrity"  ><span class="genericon genericon-checkmark">3 PLACES FOR A GREAT HOLIDAY</span></a></li>
+                          <li><a href="#"  ><span class="genericon genericon-checkmark">WHY YOU SHOULD WORKOUT MORE OFTEN</span></a></li>
+                          <li><a href="#"  ><span class="genericon genericon-checkmark">STARTUP COMPANY'S FOUNDERS REAVEAL NEW PRODUCT</span></a></li>
+
+                     </ul>
+
+                      <span style="position:absolute;top:60px;max-width:22%;font-size:14px;font-weight:normal;left:640px;color:#BDBDBD;">Si vous Voulez etre toujours au courant de nos nouveautés, avoir toutes les informations qui pourront vous intéresser,veueillez laissez votre adresse mail. <br><br>
+
+
+                       <form  action="" >
+                <input type="text" name="mail"  placeholder="VOTRE EMAIL" dir="ltr" style="width:240px;height:40px;"><br><br><br>
+
+                <input type="submit" value="SUBSCRIBE"  id="bttn">
+            </form></span>
+                     
+
+                      <span style="position:absolute;top:60px;max-width:22%;font-size:14px;font-weight:normal;left:950px;color:#BDBDBD;">Follow us on twitter:</span> <br>
+                      <span "position:absolute;top:60px;max-width:22%;font-size:14px;font-weight:normal;left:950px;color:#BDBDBD; text-decoration:none;"> <a href="https://twitter.com/Gen42_" style=" text-decoration:none;"></a></span> 
+              </div>
+
+                 
+
+</body>
+
+
+
+
+
+
+
+
+</html>
